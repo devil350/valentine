@@ -22,8 +22,8 @@ body {
 }
 
 .clock {
-    position: absolute;
-    top: 20px;
+    position: fixed; /* Change to fixed positioning */
+    bottom: 20px; /* Move to bottom corner */
     right: 20px;
     font-size: 2em;
     color: rgba(255, 255, 255, 0.9); /* Increased opacity for better visibility */
@@ -37,7 +37,7 @@ h1, p {
 .button-link {
     text-decoration: none; /* Remove underline */
     padding: 10px 20px; /* Add padding */
-    background-color: #FF6347; /* Button background color */
+    background-color: #ff6347; /* Button background color */
     color: white; /* Button text color */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s, transform 0.3s; /* Animation effects */
@@ -50,14 +50,14 @@ h1, p {
 }
 
 @media (max-width: 600px) {
+    .clock {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+        bottom: 10px; /* Adjust position for smaller screens */
+        right: 10px; /* Adjust position for smaller screens */
+    }
     h1 {
         font-size: 2em; /* Adjust font size for smaller screens */
     }
-    p {
-        font-size: 1.2em; /* Adjust font size for smaller screens */
-        line-height: 1.5; /* Improve line spacing for readability */
-    }
-}
     p {
         font-size: 1.2em; /* Adjust font size for smaller screens */
         line-height: 1.5; /* Improve line spacing for readability */
