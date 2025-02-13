@@ -1,0 +1,65 @@
+body {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Arial', sans-serif; /* Added font family for better readability */
+    color: #ffffff; /* Set text color to white for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send the image to the back */
+    object-fit: cover; /* Cover the entire area */
+}
+
+.clock {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.9); /* Increased opacity for better visibility */
+}
+
+h1, p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for better readability */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.button-link {
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding */
+    background-color: #FF6347; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Animation effects */
+    display: inline-block; /* Make it behave like a button */
+}
+
+.button-link:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+    p {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+        line-height: 1.5; /* Improve line spacing for readability */
+    }
+}
+    p {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+        line-height: 1.5; /* Improve line spacing for readability */
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Page</title>
+    <link rel="stylesheet" href="gift.css">
+</head>
+<body>
+    <img src="https://thumbs.dreamstime.com/b/illustration-plane-silhouette-night-starry-sky-copy-space-text-message-motivational-quote-handdrawn-watercolour-144855965.jpg" alt="Background Image" class="background-image">
+    <div class="clock" id="clock"></div>
+    <h1>Love is Temporary</h1>
+    <p>While love can be fleeting, your career and success are built on hard work and determination.</p>
+    <p>Remember, if you want real success, it requires dedication and effort!</p>
+    <b><p class="signature" id="dynamic-message">Welcome To My Dark Side!</p></b>
+
+    <a href="https://www.sarkariresult.com/railway/rrb-group-d-cen-08-2024/" id="success-button" class="button-link">Click here for success!</a>
+
+    <script src="gift.js"></script>
+    <style>
+        .signature {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-out {
+            animation: fadeOut 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+
+    <script>
+        // Check if the user navigated back
+        if (document.referrer.includes("previous_page_url")) {
+            document.getElementById("dynamic-message").textContent = "I hope you understand who created this page!";
+            document.querySelectorAll('h1, p:not(#dynamic-message)').forEach(element => {
+                element.classList.add('fade-out'); // Add fade-out class to other elements
+            });
+        }
+
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to display clock immediately
+    </script>
+</body>
+</html>

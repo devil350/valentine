@@ -1,0 +1,30 @@
+body {
+    background-color: #8B0000; /* Red Velvet */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ff69b4; /* Hot pink color */
+}
+p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #FF6347; /* Tomato */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Animation */
+}
